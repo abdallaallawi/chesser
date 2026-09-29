@@ -1,0 +1,6 @@
+[submodule "GameServer/GameServer/GameServer/nlohmann"]
+	path = GameServer/GameServer/GameServer/nlohmann
+	url = https://github.com/nlohmann/json
+[submodule "GameServer/GameServer/GameServer/vcpkg"]
+	path = GameServer/GameServer/GameServer/vcpkg
+	url = https://github.com/microsoft/vcpkg

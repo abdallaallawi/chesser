@@ -1,0 +1,330 @@
+html {
+    user-select: none;
+}
+body {
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    zoom: reset;
+}
+.borders {
+    background-color: darkslategray;
+}
+.leftsec {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.rightsec {
+    grid-area: 1 / 3 / 2 / 4;
+}
+.main {
+    background-color: #444F4A;
+    border: solid 0.1vh;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.profcont {
+    margin: 1vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+    background: linear-gradient(to right, #51CFBE, #0A633A);
+    border-radius: 4px;
+    height: 6vh;
+}
+
+.profile {
+    display: grid;
+    width: 13vw;
+    grid-template-columns: 35% 65%;
+}
+
+#usernameCont {
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+#usernametxt {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2.5vh;
+    z-index: 1;
+}
+
+#usernametxt::before {
+    content: attr(data-text);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -1;
+    font-size: 2.5vh;
+    -webkit-text-stroke: 0.2vw black;
+}
+
+#logoutbtn {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vh;
+    color: blue;
+}
+
+#usernameCont div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileicon {
+    position: relative;
+    width: 5vw;
+    height: 5vh;
+    bottom: 0.3vh;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+.profileicon.hover {
+    fill: #426662;
+}
+.buttons {
+    position: relative;
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh 10vh;
+    gap: 3vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 30vw;
+    top: 20vh;
+    width: 40vw;
+    height: 70vh;
+}
+.btn {
+    position: relative;
+    display: flex;
+    width: 20vw;
+    height: 10vh;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 9px;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #51CFBE, #28A669);
+    cursor: pointer;
+}
+.btn::before {
+    content: attr(data-text);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 3.2vh;
+    z-index: -1;
+    -webkit-text-stroke: 0.25vw black;
+}
+
+.btn.hover {
+    background: linear-gradient(to top, #51CFBE, #8BE0B6);
+}
+
+.logo {
+    position: relative;
+    width: 10vw;
+    height: 5vh;
+    cursor: pointer;
+    top: 0.3vh;
+}
+
+.footer {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    border: solid 1px;
+    bottom: 0vh;
+    margin: 0.7vw;
+    width: 58vw;
+    border-radius: 4px;
+    background: linear-gradient(to right, #51CFBE, #0A633A);
+    height: 8vh;
+}
+.learn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    padding-top: 2.6vh;
+    padding-left: 2vw;
+    cursor: pointer;
+    
+}
+.midfooter {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.iconcont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navicon {
+    width: 3.5vw;
+    height: 3.5vh;
+    cursor: pointer;
+}
+.navicon.hover {
+    fill: #426662;
+}
+
+.credbox {
+    display: grid;
+    grid-template-rows: 15vh 15vh 15vh 15vh;
+    position: relative;
+    border: solid 0.1vh;
+    top: 10vh;
+    width: 30vw;
+    height: 60vh;
+    left: 15vw;
+}
+
+.signupbox {
+    display: grid;
+    grid-template-rows: 15vh 29vh 8vh 8vh;
+    position: relative;
+    border: solid 0.1vh;
+    top: 10vh;
+    width: 30vw;
+    height: 60vh;
+    left: 15vw;
+}
+
+#sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+#sign::before {
+    content: attr(data-text);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -1;
+    -webkit-text-stroke: 0.5vw black;
+}
+
+.creds {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    gap: 5%;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+    font-size: 1.5vw;
+}
+.txtboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.txtbox {
+    border-radius: 5px;
+    height: 3vh;
+    width: 14vw;
+    font-size: 0.9vw;
+}
+
+.btncont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.submitbtn {
+    background-color: #27F55E;
+    width: 26vw;
+    height: 8vh;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    font-size: 1.15vw;
+    z-index: 1;
+}
+.submitbtn::before {
+    content: attr(data-text);
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: -1;
+    -webkit-text-stroke: 0.2vw #154A30;
+}
+.submitbtn.hover {
+    background-color: #88F2A4;
+}
+
+.otheroptions {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.signupcreds {
+    margin-bottom: 1.5vh;
+}
+
+.signuptxtbox {
+    border-radius: 5px;
+    height: 2.6vh;
+    width: 14vw;
+    font-size: 0.9vw;
+}
+
+#errormsg {
+    display: none;
+    grid-template-columns: 80% 20%;
+    position: absolute;
+    background-color:#0A633A;
+    width: 59.79vw;
+    height: 20vh;
+    bottom: 1vh;
+    z-index: 1;
+}
+#msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5vh;
+}
+
+#erricon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.erroricon {
+    width: 7vw;
+    height: 7vh;
+}

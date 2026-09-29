@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build files / binaries
+*.exe
+*.o
+build/
+node_modules/
+
+# Visual Studio cache and local files
+x64/
+*.dll
+*.obj
+.vs/
+*.ipch

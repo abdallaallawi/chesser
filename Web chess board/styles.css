@@ -1,0 +1,110 @@
+body {
+    background-color:darkslategray;
+}
+
+.table {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 39px 800px 39px;
+    grid-template-rows: 39px 800px 39px;
+    width: 880px;
+    height: 880px;
+    background-color: maroon;
+    left: 26%;
+    top: 4%;
+    user-select: none;
+}
+
+.cord {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14pt;
+    color: wheat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chessboard {
+    position: absolute;
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    border: solid 0.1px;
+    border-color: wheat;
+    width: 800px;
+    height: 800px;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+
+}
+.topcenter {
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: 37xp;
+}
+.centerleft {
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+}
+.centerright {
+    grid-area: 2 / 3 / 3 / 4;
+    display: grid;
+}
+.bottomcenter {
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: 37xp;
+}
+
+
+.bottomright {
+    grid-area: 3 / 3 / 4 / 4;
+}
+.topleft {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.topright {
+    grid-area: 1 / 3 / 2 / 4;
+}
+.bottomleft {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.square {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-width: 15px;
+}
+
+.square.highlight {
+    background-color: orange; 
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-width: 15px;
+}
+
+.dark {
+    background-color:maroon;
+}
+.light {
+    background-color: white;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: grab;
+}
+
+.circle {
+    position: relative;
+    left: 35px;
+    top: 35px;
+    height: 32px;
+    width: 32px;
+}
